@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-detect-screenshot",
+  "version": "1.0.0",
+  "description": "Detects screenshots on iOS",
+  "cordova": {
+    "id": "com.lukemiles.screenshot",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukemiles/cordova-plugin-detect-screenshot"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Luke Miles",
+  "license": "MIT"
+}
