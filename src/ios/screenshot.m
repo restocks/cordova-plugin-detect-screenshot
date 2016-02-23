@@ -12,10 +12,11 @@
                           object:nil
                            queue:mainQueue
                       usingBlock:^(NSNotification *note) {
-                        if ([self.webView isKindOfClass:[UIWebView class]]) {
-                            [(UIWebView*)self.webView stringByEvaluatingJavaScriptFromString:"cordova.fireDocumentEvent('screenshot');"];
+                        if ([self.webView respondsToSelector:@selector(stringByEvaluatingJavaScriptFromString:)]) {
+                            [self.webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"cordova.fireDocumentEvent('screenshot');" waitUntilDone:NO];
                         } else {
-                          [self.webView stringByEvaluatingJavaScriptFromString:@"cordova.fireDocumentEvent('screenshot');"]; 
+                            // cordova lib version is > 4
+                            [self.webView performSelectorOnMainThread:@selector(evaluateJavaScript:completionHandler:) withObject:@"cordova.fireDocumentEvent('screenshot');"  waitUntilDone:NO];
                         }
                       }];
         }
