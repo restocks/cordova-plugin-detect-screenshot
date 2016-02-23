@@ -12,7 +12,11 @@
                           object:nil
                            queue:mainQueue
                       usingBlock:^(NSNotification *note) {
-                        [self.webView stringByEvaluatingJavaScriptFromString:@"cordova.fireDocumentEvent('screenshot');"];
+                        if ([self.webView isKindOfClass:[UIWebView class]]) {
+                            [(UIWebView*)self.webView stringByEvaluatingJavaScriptFromString:"cordova.fireDocumentEvent('screenshot');"];
+                        } else {
+                          [self.webView stringByEvaluatingJavaScriptFromString:@"cordova.fireDocumentEvent('screenshot');"]; 
+                        }
                       }];
         }
     }
