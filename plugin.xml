@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="com.lukemiles.screenshot" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
-  <name>cordova-plugin-detect-screenshot</name>    <!-- ios -->
+  <name>Detect Screenshot</name>    <!-- ios -->
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
         <feature name="Screenshot">
