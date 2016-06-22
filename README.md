@@ -10,6 +10,6 @@ When a screenshot occurs, a 'screenshot' event is triggered. Simply listen for t
     document.addEventListener("screenshot", function() {
         window.alert("Screenshot");
     }, false);
-    
-## License 
+
+## License
 MIT.

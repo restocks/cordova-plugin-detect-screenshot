@@ -1,9 +1,9 @@
-    /********* screenshot.h Cordova Plugin Header *******/
+/********* Screenshot.h Cordova Plugin Header *******/
 
-    #import <Cordova/CDV.h>
+#import <Cordova/CDV.h>
 
-    @interface screenshot : CDVPlugin
+@interface Screenshot : CDVPlugin
 
-    - (void)screenshot:(CDVInvokedUrlCommand*)command;
+- (void)pluginInitialize;
 
-    @end
+@end
