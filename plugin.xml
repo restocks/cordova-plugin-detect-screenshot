@@ -9,7 +9,7 @@
         </feature>
     </config-file>
 
-    <header-file src="src/ios/Screenshot.h" />
-    <source-file src="src/ios/Screenshot.m" />
+    <header-file src="src/ios/screenshot.h" />
+    <source-file src="src/ios/screenshot.m" />
   </platform>
 </plugin>
