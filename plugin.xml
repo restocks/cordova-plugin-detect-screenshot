@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="com.lukemiles.screenshot" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
-  <name>cordova-plugin-screenshot</name>    <!-- ios -->
-    <platform name="ios">
+  <name>Detect Screenshot</name>    <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+        <feature name="Screenshot">
+            <param name="ios-package" value="Screenshot" />
+            <param name="onload" value="true" />
+        </feature>
+    </config-file>
 
-        <config-file target="config.xml" parent="/*">
-            <feature name="screenshot">
-                <param name="ios-package" value="screenshot" />
-                <param name="onload" value="true" />
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/screenshot.h" />
-        <source-file src="src/ios/screenshot.m" />
-
-    </platform>
+    <header-file src="src/ios/screenshot.h" />
+    <source-file src="src/ios/screenshot.m" />
+  </platform>
 </plugin>
