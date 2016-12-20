@@ -20,7 +20,7 @@
                             [self.webView performSelector:@selector(evaluateJavaScript:completionHandler:) withObject:@"cordova.fireDocumentEvent('screenshot');" withObject:nil];
                         } else {
                             // cordova lib version is > 4
-                            [self.webView performSelectorOnMainThread:@selector(evaluateJavaScript:completionHandler:) withObject:@"cordova.fireDocumentEvent('screenshot');"  waitUntilDone:NO];
+                            [self.commandDelegate evalJs:@"cordova.fireDocumentEvent('screenshot');" ];
                         }
                       }];
         }
