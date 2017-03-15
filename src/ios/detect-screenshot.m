@@ -1,6 +1,6 @@
    /********* screenshot.m Cordova Plugin Implementation *******/
 
-    #import "screenshot.h"
+    #import "detect-screenshot.h"
     #import <Cordova/CDV.h>
 
     @implementation screenshot

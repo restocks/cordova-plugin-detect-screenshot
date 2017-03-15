@@ -4,14 +4,14 @@
     <platform name="ios">
 
         <config-file target="config.xml" parent="/*">
-            <feature name="screenshot">
+            <feature name="detect-screenshot">
                 <param name="ios-package" value="screenshot" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/screenshot.h" />
-        <source-file src="src/ios/screenshot.m" />
+        <header-file src="src/ios/detect-screenshot.h" />
+        <source-file src="src/ios/detect-screenshot.m" />
 
     </platform>
 </plugin>
