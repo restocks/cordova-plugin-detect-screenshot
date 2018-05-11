@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "Detects screenshots on iOS",
   "cordova": {
-    "id": "com.lukemiles.screenshot",
+    "id": "cordova-plugin-detect-screenshot",
     "platforms": [
       "ios"
     ]
