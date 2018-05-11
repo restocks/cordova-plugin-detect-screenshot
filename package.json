@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-detect-screenshot",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Detects screenshots on iOS",
   "cordova": {
     "id": "cordova-plugin-detect-screenshot",
